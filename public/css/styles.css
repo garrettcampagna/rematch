@@ -398,3 +398,7 @@ body {
   margin: 0 auto;
   width: 445px;
 }
+
+.closer a {
+  text-decoration: underline
+}

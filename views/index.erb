@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>
+      Rematch | Because doing good is a turn-on.
+    </title>
+
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <h1>
+          <a class="logo modal-btn" href="/">
+            ReMatch
+          </a>
+        </h1>
+        <p class="tagline">
+          &ldquo;Because doing good is a turn on.&rdquo;
+        </p>
+        <div class="utility">
+          <a class="utility__link modal-btn" href="#">
+            Log In
+          </a>
+          <a class="btn btn--small modal-btn" href="#">
+            Sign Up
+          </a>
+        </div>
+      </header>
+      <div class="hero">
+        <h1>Looking for a date who cares?</h1>
+        <a class="btn btn--pink modal-btn" href="#">
+          Don&rsquo;t Settle
+        </a>
+      </div>
+      <div class="intro">
+        <p>
+          Are you tired of swiping right only to meet ANOTHER twenty-something for an overpriced cocktail and an earful of the wonders of working in M&amp;A?
+        </p>
+        <p>
+          Are you bored of "matching" with someone who thinks social impact is what happens after a night of binge drinking?
+        </p>
+        <p class="highlighted">
+          Well, we are too.
+        </p>
+        <p>
+          ReMatch helps you get matched to cuties who care about making the world a better place on dates that meet your unique needs and desire to do good.
+        <p>
+          We know that you don't compromise your values, and we don't think your partner should either.
+        </p>
+      </div>
+      <div class="call-to-action">
+        <h2>Ready for a dating Rematch?</h2>
+        <a class="btn btn--pink modal-btn" href="#">Join Now</a>
+        <a class="btn tweet-btn">Tweet This</a>
+      </div>
+      <div class="examples">
+        <h2>
+          Don&rsquo;t settle for meaningless dates! ReMatch sample dates include:
+        </h2>
+        <ul>
+          <li>
+            <h3>Hiking</h3>
+            <img src="images/hiking.png" alt="Hiking!" width="286" height="191">
+            <p>&rdquo;Get to new heights together!&ldquo;</p>
+          </li>
+          <li>
+            <h3>Gardening</h3>
+            <img src="images/gardening.png" alt="Gardening!" width="286" height="191">
+            <p>&rdquo;Let your love blossom...&ldquo;</p>
+          </li>
+          <li>
+            <h3>Volunteering</h3>
+            <img src="images/volunteering.png" alt="Volunteering!" width="286" height="191">
+            <p>&rdquo;Doing good is a turn on!&ldquo;</p>
+          </li>
+        </ul>
+        <a class="btn modal-btn" href="#">Just match me, already!</a>
+      </div>
+    </div>
+    <footer class="footer">
+
+      <h2>
+        Don&rsquo;t Settle
+      </h2>
+      <p class="subhead">
+        ReMatch helps you get matched to cuties who care about making the world a better place.
+      </p>
+      <a class="btn btn--small" href="#">
+        Tweet This
+      </a>
+      <p class="copyright">
+        &copy;2014 ReWork LLC. All rights reserved.
+      </p>
+    </footer>
+    <div class="modal-wrap">
+      <div class="modal">
+        <button class="modal-close">
+          Close
+        </button>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <script>
+      $('a.modal-btn').on('click', function(e) {
+        e.preventDefault();
+        $('.modal-wrap').addClass('active');
+      });
+
+      $('#tweet-button').on('click', function(e) {
+        e.preventDefault();
+        window.open("https://twitter.com/intent/tweet?button_hashtag=jinglebots",
+          'sharetwitter', 'toolbar=0,status=0,width=480,height=360');
+      });
+
+
+      $('.modal-close').on('click', function() {
+        $('.modal-wrap').removeClass('active');
+      });
+    </script>
+  </body>
+</html>

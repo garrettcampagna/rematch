@@ -1,0 +1,367 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+main,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header,
+hgroup, menu, nav, section, menu,
+time, mark, audio, video {
+  font-weight: normal;
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+article, aside, figure, footer, header,
+hgroup, nav, section { display:block; }
+
+ol, ul { list-style:none; }
+
+blockquote, q { quotes:none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content:''; content:none; }
+
+a { margin:0; padding:0; border:0; font-size:100%; vertical-align:baseline; background:transparent; }
+
+table { border-collapse:collapse; border-spacing:0; }
+
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+
+input, select { vertical-align:middle; }
+
+// fonts.css from the YUI Library: http://developer.yahoo.com/yui/
+// refer to http://developer.yahoo.com/yui/fonts/ for font sizing
+table { font-size:inherit; font-size: 100%; }
+
+select, input, textarea { font-size: 99%; }
+
+pre, code { font:115% monospace; *font-size:100%; }
+
+sub { font-size: smaller; vertical-align: sub; }
+
+// make buttons play nice in IE:
+// http://www.viget.com/inspire/styling-the-button-element-in-internet-explorer/
+button {  width: auto; overflow: visible; }
+
+@font-face{font-family:"Gibson";src:url("http://rework.jobs/assets/Gibson.otf") format("opentype");font-weight:400;font-style:normal}
+@font-face{font-family:"Gibson";src:url("http://rework.jobs/assets/Gibson-Italic.otf") format("opentype");font-weight:400;font-style:italic}
+@font-face{font-family:"GibsonLight";src:url("http://rework.jobs/assets/Gibson-Light.otf") format("opentype");font-weight:300;font-style:normal}
+@font-face{font-family:"GibsonLight";src:url("http://rework.jobs/assets/Gibson-Light-Italic.otf") format("opentype");font-weight:300;font-style:italic}
+@font-face{font-family:"GibsonBold";src:url("http://rework.jobs/assets/Gibson-SemiBold.otf") format("opentype");font-weight:700;font-style:normal}
+@font-face{font-family:"GibsonBold";src:url("http://rework.jobs/assets/Gibson-Semibold-Italic.otf") format("opentype");font-weight:700;font-style:italic}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+a {
+  text-decoration: none
+}
+
+body {
+  background: #2c3e50;
+  color: #777;
+  font-family: Gibson;
+  font-size: 24px;
+  line-height: 1.45;
+}
+
+.wrapper {
+  background: #fff;
+  position: relative;
+}
+
+.wrapper,
+.footer {
+  margin: 0 auto;
+  width: 1100px;
+}
+
+.header {
+  height: 70px;
+}
+
+.logo {
+  background: url('../images/logo.png');
+  display: block;
+  float: left;
+  overflow: hidden;
+  text-indent: 100%;
+  height: 70px;
+  width: 310px;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.tagline {
+  float: left;
+  font-size: 17px;
+  font-style: italic;
+  line-height: 70px;
+}
+
+.utility {
+  float: right;
+  margin-top: 13px;
+  padding-right: 45px;
+}
+
+.utility__link {
+  border-bottom: 1px solid #1da9d9;
+  color: #1da9d9;
+  font-family: GibsonLight;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.btn {
+  background: #1da9d9;
+  border-radius: 5px;
+  border-bottom: 3px solid #0096ce;
+  color: #fff;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 70px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn--pink {
+  background: #ed008c;
+  border-color: #c90078;
+}
+
+.btn--green {
+  background: #51b96e;
+  border-color: #2f9a48;
+}
+
+.btn--small {
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 35px;
+  margin-left: 10px;
+  padding: 0 20px;
+}
+
+.hero {
+  background: url('../images/hero.jpg');
+  background-size: 1100px 495px;
+  background-repeat:no-repeat;
+  height: 495px;
+  overflow: hidden;
+  padding: 110px 150px;
+  text-align: center;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 100px;
+  font-family: GibsonBold;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.hero .btn {
+  font-size: 24px;
+  width: 225px;
+  line-height: 60px;
+}
+
+.hero .btn:hover {
+  opacity: 0.92;
+}
+
+.intro {
+  font-family: GibsonLight;
+  font-weight: 300;
+  padding: 15px 125px;
+}
+
+.intro p {
+  margin: 25px 0;
+}
+
+.highlighted {
+  color: #0eaeec;
+  font-size: 40px;
+  margin: 35px 0;
+}
+
+.call-to-action {
+  background: url("../images/banner.jpg");
+  background-size: 1110px 230px;
+  background-repeat:no-repeat;
+  overflow: hidden;
+  padding: 0 250px 30px;
+}
+
+.call-to-action h2 {
+  color: #fff;
+  font-family: GibsonLight;
+  font-size: 50px;
+  line-height: 115px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.call-to-action .btn {
+  float: right;
+  text-align: center;
+  width: 240px;
+}
+
+.call-to-action .btn--pink {
+  float: left;
+}
+
+.examples {
+  padding: 20px 25px;
+  text-align: center;
+}
+
+.examples ul {
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.examples li {
+  float: left;
+  width: 33%;
+}
+
+.examples p {
+  font-family: GibsonLight;
+  font-size: 22px;
+  line-height: 60px;
+}
+
+.examples h2 {
+  font-size: 22px;
+  font-family: GibsonBold;
+  line-height: 65px;
+}
+
+.examples h3 {
+  color: #0eaeec;
+  font-family: GibsonLight;
+  font-size: 28px;
+  padding-bottom: 5px;
+}
+
+.examples img {
+  background: #fff;
+  border: 1px solid #797979;
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.examples .btn {
+  padding: 0 35px;
+}
+
+.footer {
+  color: #fff;
+  padding: 55px 65px;
+  line-height: 1.2;
+}
+
+.footer h2 {
+  font-family: GibsonLight;
+  font-size: 40px;
+}
+
+.footer .subhead {
+  font-family: GibsonLight;
+  font-size: 20px;
+}
+
+.footer .btn {
+  margin: 35px 0
+}
+
+.footer .copyright {
+  font-family: GibsonBold;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.modal-wrap {
+  background: rgba(255, 255, 255, 0.7);
+  bottom: 0;
+  left: 100%;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  -webkit-transition: opacity 0.3s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+  -moz-transition: opacity 0.3s ease-out;  /* Firefox 4-15 */
+  -o-transition: opacity 0.3s ease-out;  /* Opera 10.50–12.00 */
+  transition: opacity 0.3s ease-out;
+  width: 100%;
+}
+
+.modal-wrap.active {
+  left: 0;
+  opacity: 1;
+}
+
+.modal {
+  background: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  height: 610px;
+  left: 50%;
+  margin: -305px 0 0 -390px;
+  opacity: 0;
+  padding: 50px 35px;
+  top: 50%;
+  -webkit-transition: all 0.4s ease-out 0.2s;  /* Chrome 1-25, Safari 3.2+ */
+  -moz-transition: all 0.4s ease-out 0.2s;  /* Firefox 4-15 */
+  -o-transition: all 0.4s ease-out 0.2s;  /* Opera 10.50–12.00 */
+  transition: all 0.4s ease-out 0.2s;
+  position: absolute;
+  width: 780px;
+}
+
+.modal-wrap.active .modal {
+  opacity: 1;
+}
+
+.modal-close {
+  background: url('../images/close.png') 50% 50% no-repeat;
+  border: 1px solid #777;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 4px #fff;
+  cursor: pointer;
+  font-family: GibsonLight;
+  font-size: 30px;
+  height: 45px;
+  line-height: 45px;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  text-indent: 150%;
+  top: 10px;
+  right: 10px;
+  width: 45px;
+}
+
+.modal-close:hover {
+  opacity: 0.8;
+}

@@ -55,7 +55,7 @@
       <div class="call-to-action">
         <h2>Ready for a dating Rematch?</h2>
         <a class="btn btn--pink modal-btn" href="#">Join Now</a>
-        <a class="btn tweet-btn">Tweet This</a>
+        <a class="btn tweet-btn" href="#">Tweet This</a>
       </div>
       <div class="examples">
         <h2>
@@ -89,20 +89,43 @@
       <p class="subhead">
         ReMatch helps you get matched to cuties who care about making the world a better place.
       </p>
-      <a class="btn btn--small" href="#">
+      <a class="btn btn--small tweet-btn" href="#">
         Tweet This
       </a>
       <p class="copyright">
         &copy;2014 ReWork LLC. All rights reserved.
       </p>
     </footer>
+
     <div class="modal-wrap">
       <div class="modal">
         <button class="modal-close">
           Close
         </button>
+        <h2>
+          Actually...
+        </h2>
+        <p>
+          ...we&rsquo;re ReWork, and we&rsquo;re all about helping you find meaningful work!
+        </p>
+        <p>
+          (But somebody should totally do this...)
+        </p>
+        <p>
+          Happy April 1st!
+        </p>
+        <img src="images/signature.png" alt="The Rework Team">
+        <div class="closer">
+          <a class="btn btn--green" href="http://rework.jobs#aprilfools">
+            Visit us at www.Rework.jobs
+          </a>
+          <p>
+            (oh...and if you're still looking for a date, check out our friends at <a href="http://www.howaboutwe.com/">HowAboutWe</a>.)
+          </p>
+        </div>
       </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 
     <script>
@@ -111,9 +134,9 @@
         $('.modal-wrap').addClass('active');
       });
 
-      $('#tweet-button').on('click', function(e) {
+      $('a.tweet-btn').on('click', function(e) {
         e.preventDefault();
-        window.open("https://twitter.com/intent/tweet?button_hashtag=jinglebots",
+        window.open("https://twitter.com/intent/tweet?&text=Rematch%20%7C%20Because%20doing%20good%20is%20a%20turn-on.",
           'sharetwitter', 'toolbar=0,status=0,width=480,height=360');
       });
 

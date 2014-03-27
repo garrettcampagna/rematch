@@ -325,11 +325,12 @@ body {
   background: #fff;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   border-radius: 30px;
+  font-family: GibsonLight;
   height: 610px;
   left: 50%;
   margin: -305px 0 0 -390px;
   opacity: 0;
-  padding: 50px 35px;
+  padding: 25px 50px;
   top: 50%;
   -webkit-transition: all 0.4s ease-out 0.2s;  /* Chrome 1-25, Safari 3.2+ */
   -moz-transition: all 0.4s ease-out 0.2s;  /* Firefox 4-15 */
@@ -364,4 +365,36 @@ body {
 
 .modal-close:hover {
   opacity: 0.8;
+}
+
+.modal h2 {
+  color: #1da9d9;
+  font-size: 40px;
+}
+
+.modal p {
+  margin: 20px 0;
+  width: 570px;
+}
+
+.modal img {
+  display: block;
+  padding-left: 40px;
+}
+
+.closer {
+  text-align: center;
+}
+
+.closer .btn {
+  margin: 45px 0;
+  font-family: GibsonBold;
+  font-size: 17px;
+  line-height: 60px;
+  padding: 0 30px;
+}
+
+.closer p {
+  margin: 0 auto;
+  width: 445px;
 }

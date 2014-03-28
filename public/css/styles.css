@@ -422,6 +422,7 @@ body {
   width: 445px;
 }
 
-.closer a {
+.closer .how-about-we {
+  color: #1da9d9;
   text-decoration: underline
 }

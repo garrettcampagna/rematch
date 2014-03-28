@@ -298,6 +298,8 @@ body {
 
 .footer-wrapper {
   background: #2c3e50;
+  /* maybe unneccessary, looks weird on mobile though :/ */
+  width: 100%;
 }
 
 .footer {
